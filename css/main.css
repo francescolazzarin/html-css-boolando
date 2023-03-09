@@ -6,9 +6,13 @@
 .bgHeader{
     background-color: #FF6900;
     min-height: 50px;
+    position: fixed;
+    z-index: 1;
     width: 100%;
+    top: 0;
+    margin-bottom: 20px;
 }
-.linkGenere a{
+.linkGenere a, .sezioneUtenti a{
     color: white;
     text-decoration:none;
 }
@@ -17,10 +21,11 @@ a:hover{
     color: blue;
 }
 .flexHeader{
+    align-items: center;
+    min-height: 50px;
     display: flex;
-    height: 100%;
     max-width: 80%;
-    margin: 0 auto;
+    margin: 0px auto;
     justify-content: space-between;
 }
 .linkGenere{
@@ -38,12 +43,13 @@ a:hover{
 .flexmain{
     max-width: 90%;
     display: flex;
-    margin:0 auto;
+    margin-top:60px ;
+    margin-left: auto;
+    margin-right: auto;
     flex-wrap: wrap;
 }
 .primalinea{
     display: flex;
-    margin: 60px;
     flex-wrap: wrap;
     height: 50%;
     justify-content: space-between;
@@ -59,8 +65,10 @@ a:hover{
 .secondalinea{
     display: flex;
     height: 50%;
-    margin: 60px;
+    margin: 40px;
     justify-content: space-between;
+    margin-left: auto;
+    margin-right: auto;
 }
 .prezzo_S{
     color: red;
@@ -100,7 +108,7 @@ a:hover{
     right: 0;
 }
 .fa-heart{
-    padding: 5px;
+    padding: 10px;
 }
 .fa-heart:hover{
     color: red;
