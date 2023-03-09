@@ -50,7 +50,6 @@ a:hover{
 }
 .immagine{
     width: 30%;
-    height: 60%;
     position:relative;
 }
 .immagine img{
@@ -122,6 +121,13 @@ a:hover{
     left: 0;
     bottom:85px
 }
-.prima_immagine:hover, .prima_immagin:active{
+
+.prima_immagine{
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-image: url(../img/1.webp);
+}
+.prima_immagine:hover{
     background-image: url(../img/1b.webp);
 }
+
