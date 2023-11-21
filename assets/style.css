@@ -1,0 +1,50 @@
+
+/* RESET */
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+img{
+    width: 100%;
+    display: block;
+}
+
+/* GENERALI */
+
+header{
+    background-color: #FF6900;
+    position: fixed;
+    width: 100%;
+    margin-bottom: 2.5rem;
+}
+nav{
+    padding: 10px;
+    max-width: 80%;
+    margin-inline: auto;
+}
+nav button{
+    background-color: #FF6900;
+    border: none;
+}
+ul li{
+    list-style-type: none;
+}
+a{
+    text-decoration: none;
+    color: white;
+}
+ul.flex-container{
+    gap: 5px;
+}
+.flex-container{
+    display: flex;
+}
+.flex-nav{
+    justify-content: space-between;
+    align-items: center;
+}
+.logo{
+    max-width: 10%;
+}
