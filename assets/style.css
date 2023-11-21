@@ -17,12 +17,10 @@ header{
     background-color: #FF6900;
     position: fixed;
     width: 100%;
-    margin-bottom: 2.5rem;
+    z-index: 999;
 }
 nav{
     padding: 10px;
-    max-width: 80%;
-    margin-inline: auto;
 }
 nav button{
     background-color: #FF6900;
@@ -31,10 +29,21 @@ nav button{
 ul li{
     list-style-type: none;
 }
-a{
+a,footer{
     text-decoration: none;
     color: white;
 }
+main{
+    padding-block: 80px;
+}
+h3{
+    text-transform: uppercase;
+}
+footer{
+    background-color: #1A1A1A;
+}
+/* ***** */
+
 ul.flex-container{
     gap: 5px;
 }
@@ -47,4 +56,75 @@ ul.flex-container{
 }
 .logo{
     max-width: 10%;
+}
+.mw-80{
+    max-width: 80%;
+    margin-inline: auto;
+}
+.card{
+    flex-basis: calc(100% / 3 - 30px);
+}
+.col{
+    flex-direction: column;
+}
+.relative{
+    position: relative;
+}
+.absolute{
+    position: absolute;
+}
+.like{
+    width: 20px;
+    height: 20px;
+    right: 0px;
+    top: 5px;
+    background-color: white;
+    text-align: center;
+}
+.like:hover{
+    color: red;
+}
+.sconto{
+    left:5px;
+    bottom: 5px;
+}
+
+.absolute.sconto>span{
+    color: white;
+}
+.absolute.sconto span:nth-of-type(odd){
+    background-color: red;
+   
+}
+.absolute.sconto span:nth-of-type(even){
+    background-color:#008000;
+}
+.img-2{
+    top: 0;
+    left: 0;
+    z-index: -1;
+}
+.relative:hover .img-2{
+    z-index: 0;
+}
+.wrap{
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap:40px
+}
+.prezzo span:first-of-type{
+    color:red
+}
+.prezzo span:last-of-type{
+    text-decoration: line-through;
+}
+footer ul li{
+    display: inline-block;
+}
+footer ul li:nth-of-type(2){
+    margin-inline: 5px;
+}
+footer .flex-container{
+    padding: 20px;
+    justify-content: space-between;
 }
